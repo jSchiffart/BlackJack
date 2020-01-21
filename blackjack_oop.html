@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styling.css">
+  <script src="js/blackjack_object.js"></script>
+  <script src="js/blackjack_manager.js"></script>
+  <title>BlackJack</title>
+
+</head>
+
+<body>
+
+
+<header onload="blink()">
+  <h1 class ="flashing">BLACKJACK</h1>
+
+</header>
+
+<section id="game">
+
+  <h1>DEALER</h1><p id="dealer"></p>
+  <h1>PLAYER</h1><p id="player"></p>
+  <button id="card" type="button" onclick="player_new_card()">CARD</button>
+  <button id="stand" type="button" onclick="dealer_finish()">STAND</button>
+  <button id="new_game" type="button" onclick="new_game()" disabled>NEW GAME</button>
+  <H2 id="resultado"></H2>
+
+</section>
+
+<section id="sec_debug">
+  <h1>Debug</h1>
+  <p id="debug"></p>
+</section>
+
+<section>
+  <script> window.onload = new_game();</script>
+</section>
+<footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/*
+#000000
+#7d12ff
+#ab20fd
+#200589
+#fbf8fd */
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: url("../imgs/blackjackwp.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    display: block;
+}
+
+header {
+
+    font-size: 24px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    text-align: center;
+    margin-bottom: auto;
+    border-bottom: 1px #ff0080 solid;
+
+}
+.flashing {
+
+    animation:3s blinker linear infinite;
+    -webkit-animation:3s blinker linear infinite;
+    -moz-animation:3s blinker linear infinite;
+
+
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
+
+#game {
+    padding-top: 50px;
+    color:white;
+    font-size:24px;
+
+    text-align:center;
+    font-family: 'Futura';
+
+
+}
+
+
+#sec_debug {
+    display: none;
+
+
+}
+button{
+    background:#7d12ff;
+    color:#fff;
+    border:none;
+    font-family: 'Futura';
+    height:40px;
+    font-size:22px;
+    cursor:pointer;
+    transition:800ms ease all;
+    border-radius: 8px;
+
+
+}
+
+
+button:hover{
+    background:#fff;
+    color:#7d12ff;
+}
